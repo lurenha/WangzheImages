@@ -30,7 +30,7 @@ IMAGES_STORE = os.path.join(project_dir,'images/')
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 #USER_AGENT = 'wzry (+http://www.yourdomain.com)'
 
-#请求头
+#代理列表
 USER_AGENT_LIST = [
     'MSIE (MSIE 6.0; X11; Linux; i686) Opera 7.23',
     'Opera/9.20 (Macintosh; Intel Mac OS X; U; en)',

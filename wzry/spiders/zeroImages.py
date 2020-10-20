@@ -7,7 +7,9 @@ from wzry.items import ZeroItem
 
 class ZeroimagesSpider(scrapy.Spider):
     name = 'zeroImages'
+    #域名限制
     allowed_domains = ['qq.com']
+    #起始url地址
     start_urls = ['https://pvp.qq.com/web201605/herolist.shtml']
 
     #首页获取所有英雄的名称，和详情url
@@ -24,7 +26,7 @@ class ZeroimagesSpider(scrapy.Spider):
                 meta={"item": item}
             )
 
-    #详情页获取图片地址
+    #详情页获取图片URL
     def parse_detail(self, response):
         item = response.meta["item"]
         item['image_url'] = response.xpath(
