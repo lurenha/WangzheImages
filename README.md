@@ -10,3 +10,5 @@ scrapy genspider zeroImages "qq.com"
 完善spider使用xpath等方法提取图片链接
 1. 保存数据
 完善pipleline 保存url的图片到本地
+
+#### 教程：http://lurenpeng.cn/peng/blog/104
