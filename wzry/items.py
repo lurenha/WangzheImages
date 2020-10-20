@@ -6,8 +6,6 @@
 import scrapy
 
 
-class ZeroItem(scrapy.Item):
-    # define the fields for your item here like:
+class HeroItem(scrapy.Item):
     name = scrapy.Field()
-    detail_href = scrapy.Field()
     image_url = scrapy.Field()
